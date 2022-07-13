@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import User from './Activity-2';
+import Products from './Activity-3';
+// import User from './Activity-2';
 import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -15,10 +16,18 @@ import reportWebVitals from './reportWebVitals';
 // );
 
 // Activity 2
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//   <React.StrictMode>
+//     <User />
+//   </React.StrictMode>
+// );
+
+// Activity 3
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <User />
+    <Products />
   </React.StrictMode>
 );
 

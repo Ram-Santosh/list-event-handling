@@ -1,8 +1,9 @@
 export default function User () {
     var users = require("./users.json");
-    var thead = ["Serial No.","Name (first name last name)","Email","Address(number,street)"].map((a,k3) => <th key={k3}>{a}</th>)
+    var thead = ["Serial No.","Name (first name last name)","Email","Address(number, street)"].map((a,k3) => <th key={k3}>{a}</th>)
     var tbody = users.map( (user,k1) => {
-        var [serial,email] = [user["id"],user["email"]];
+        var serial = k1 + 1;
+        var email = user["email"];
         var name = user["name"]["firstname"] +" "+ user["name"]["lastname"];
         var address = user["address"]["number"] + "," + user["address"]["street"];
 
